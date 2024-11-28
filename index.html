@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>TUMTraf V2X Cooperative Perception Dataset</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-4 publication-title">V2XScenes: A Multiple Challenging Condition Dataset for Large-Range
+                    Vehicle-Infrastructure Collaborative Perception
+</h1>  
+                    <!-- <div class="is-size-5 publication-authors">
+                            <span class="author-block"><a href="https://walzimmer.github.io/website/"
+                                                          target="_blank">Walter Zimmer</a><sup>1</sup>,</span>
+                        <span class="author-block"><a href="https://www.linkedin.com/in/gerhard-arya-wardana/"
+                                                      target="_blank">Gerhard Arya Wardana</a><sup>1</sup>,</span>
+                        <span class="author-block"><a href="https://suren3141.github.io/" target="_blank">Suren
+                                    Sritharan</a><sup>1</sup>,</span>
+                        <span class="author-block"><a href="https://www.linkedin.com/in/xingcheng-zhou-64b0a6189"
+                                                      target="_blank">Xingcheng Zhou</a><sup>1</sup>,</span>
+                        <span class="author-block"><a href="https://rruisong.github.io/" target="_blank">Rui
+                                    Song</a><sup>1,2</sup>,</span>
+                        <span class="author-block"><a
+                                href="https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll"
+                                target="_blank">Alois C. Knoll</a><sup>1</sup></span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Technical University of Munich,</span>
+                        <span class="author-block"><sup>2</sup>Fraunhofer IVI</span>
+                        
+                    </div> -->
+                    
+                    <!-- <div class="column has-text-centered">
+                        <div class="publication-links">
+                                <span class="link-block">
+                              <a href="https://arxiv.org/pdf/2403.01316.pdf" target="_blank"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                <i class="fas fa-file-pdf"></i>
+                                </span>
+                                <span>Paper</span>
+                              </a>
+                            </span>
+
+                            <!-- Github link ->
+                            <span class="link-block">
+                                    <a href="https://github.com/tum-traffic-dataset/coopdet3d" target="_blank"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Model</span>
+                                    </a>
+                                </span>
+
+
+                            <!-- Dataset link ->
+                            <span class="link-block">
+                                    <a href="https://innovation-mobility.com/en/project-providentia/a9-dataset/#anchor_release_4"
+                                       target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fa fa-database"></i>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+                            <!-- Github link ->
+                            <span class="link-block">
+                                    <a href="https://github.com/walzimmer/3d-bat" target="_blank"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Labeling Tool</span>
+                                    </a>
+                                </span>
+
+                            <!-- Github link ->
+                            <span class="link-block">
+                                    <a href="https://github.com/tum-traffic-dataset/tum-traffic-dataset-dev-kit"
+                                       target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Development Kit</span>
+                                    </a>
+                                </span>   -->
+
+
+                            <!-- ArXiv abstract Link -->
+                            <!-- <span class="link-block">
+                          <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                          </span>
+                          <span>arXiv</span>
+                          </a>
+                        </span> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body" style="margin-top: 80px;">
+        <div class="container" style="margin-top: 0px;">
+            <!--            <h2 class="title is-3">Dataset Visualization</h2>-->
+            <div id="results-carousel" class="carousel results-carousel" style="margin-top: 0;">
+                <div class="item item-video5" style="margin-top: 0;">
+                    <video poster="" id="video5"  style="margin-top: 0;" autoplay controls muted loop >
+                        <source src="static/videos/output.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-video6" style="margin-top: 0;">
+                    <video poster="" id="video6"  style="margin-top: 0;" autoplay controls muted loop >
+                        <source src="static/videos/massv2x_v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview  -->
+<!-- <section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Overview</h2>
+                <div class="content">
+                    <strong>TUMTraf-V2X</strong> is the first high-quality real-world <strong>V2X dataset</strong>
+                    for the
+                    cooperative 3D object detection and tracking task in autonomous driving.<br><br>
+                    It contains:
+                    <ul>
+                        <li>data collected by <strong>9 sensors</strong> simultaneously from onboard and roadside
+                            sensors.
+                        </li>
+                        <li><strong>2,000</strong> labeled point clouds and <strong>5,000</strong> labeled images.
+                        </li>
+                        <li><strong>30k</strong> 3D bounding boxes with track IDs.</li>
+                        <li>Challenging scenarios: near-miss and <strong>traffic violation events</strong>,
+                            overtaking
+                            and U-turn maneuvers.
+                        </li>
+                        <li><strong>HD maps</strong> of the driving domains.</li>
+                        <li>Labels in <strong>OpenLABEL</strong> standard.</li>
+                        <li>A <strong>dev kit</strong> to load, preprocess, visualize, convert labels, and to
+                            evaluate
+                            perception methods.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- End overview -->
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Whether autonomous driving can effectively handle challenging scenarios such as bad weather and complex traffic
+                        environments is still in doubt. One of the critical difficulty is that the single-agent perception is hard to obtain the
+                        complementary perceptual information around the multi-condition scenes, such as meeting occlusion. To investigate the
+                        advantages of collaborative perception in high-risky driving scenarios, we constructed a multiple challenging condition
+                        dataset for large-range vehicle-Infrastructure cooperative perception, called V2XScenes, which include seven typical
+                        multi-modal sensor layouts at successive road section. Particularly, each selected scene is labeled with specific
+                        condition description, and we provide the unique global object tracking numbers across the entire road section and
+                        sequential frames to ensure consistency. Comprehensive cooperative perception benchmarks of 3D object detection and
+                        tracking are provided, the quantitative results based on the state-of-the-art demonstrate the effectiveness of
+                        collaborative perception facing corner condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sensor setup  -->
+<!-- <section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Sensor Setup</h2>
+                <div class="content is-align-content-start">
+                    On the <strong>infrastructure</strong>, the following roadside sensors were used:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <ul>
+                        <li>1x <strong>Ouster</strong> LiDAR OS1-64 (generation 2), 64 vertical layers, 360° FOV,
+                            <br>below
+                            horizon configuration, 10 cm accuracy @120 m range
+                        </li>
+                        <li>4x <strong>Basler</strong> ace acA1920-50gc, 1920×1200, Sony IMX174 with 8 mm lenses
+                        </li>
+                    </ul>
+                    <br>On the <strong>vehicle</strong>, the following onboard sensors were
+                    used:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <ul>
+                        <li>1x <strong>Robosense</strong> RS-LiDAR-32, 32 vert. layers, 360° FOV, 3 cm accuracy @200
+                            m
+                            range
+                        </li>
+                        <li>1x <strong>Basler</strong> ace acA1920-50gc, 1920×1200, Sony IMX174 with 16 mm lens</li>
+                        <li>1x <strong>Emlid</strong> Reach RS2+ multi-band RTK GNSS receiver</li>
+                        <li>1x <strong>XSENS</strong> MTi-30-2A8G4 IMU</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End sensor setup -->
+
+<!-- infrastructure sensors ->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                &nbsp;
+                <img src="static/images/infrastructure_sensors.jpg" alt="infrastructure_sensors"/>
+                <h2 class="subtitle has-text-centered">
+                    Visualization of roadside sensors used to record the TUMTraf-V2X Cooperative Perception Dataset
+                    from
+                    infrastructure perspective.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Dataset Labeling</h2>
+            <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/videos/timelapse_labeling_fast.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section> -->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                &nbsp;
+                <img src="static/images/image.png" alt="infrastructure_sensors" />
+                <h2 class="subtitle has-text-centered">
+                    Examples of multi-condition scenes in V2XScenes.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                &nbsp;
+                <img src="static/images/ph2.jpg" alt="infrastructure_sensors" />
+                <h2 class="subtitle has-text-centered">
+                    Visualization of multi-sensor location layout.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero">
+    <div class="hero" style="margin-top: 80px;">
+        <h3 class="title is-8 has-text-centered">Cooperative 3D object detection benchmark</h3>
+        <div class="container is-centered">
+            <table class="table is-centered center">
+                <thead>
+                
+                <tr>
+                    <th>Method</th>
+                    <th>AP@IoU=0.3</th>
+                    <th>AP@IoU=0.5</th>
+                    <th>AP@IoU=0.7</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Late Fusion</td>
+                    <td>84.52</td>
+                    <td>71.79</td>
+                    <td>42.50</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Early Fusion</td>
+                    <td>90.13</td>
+                    <td>88.03</td>
+                    <td>72.92</td>
+
+                </tr>
+                <tr>
+                    <td>AttuFuse</td>
+                    <td>88.56</td>
+                    <td>81.99</td>
+                    <td>64.74</td>
+
+                </tr>
+                <tr>
+                    <td>F-Cooper</td>
+                    <td>78.29</td>
+                    <td>59.40</td>
+                    <td>41.24</td>
+
+                </tr>
+                <tr>
+                    <td>V2XVIT</td>
+                    <td>89.90</td>
+                    <td>88.05</td>
+                    <td>81.30</td>
+
+                </tr>
+                <tr>
+                    <td>CoBEVT</td>
+                    <td>88.42</td>
+                    <td>81.27</td>
+                    <td>52.24</td>
+
+                </tr>
+                <tr>
+                    <td>Where2Comm</td>
+                    <td>88.18</td>
+                    <td>72.38</td>
+                    <td>40.35</td>
+
+                </tr>
+                </tbody>
+            </table>
+            <h5 class="is-3 has-text-centered">
+               
+            </h5>
+        </div>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="hero">
+        <h3 class="title is-8 has-text-centered">Cooperative Tracking benchmark</h3>
+        <div class="container is-centered">
+            <table class="table is-centered center">
+                <thead>
+
+                    <tr>
+                        <th>Method</th>
+                        <th>sMOTA ↑</th>
+                        <th>MOTA ↑</th>
+                        <th>MOTP ↑</th>
+                        <th>MT ↑</th>
+                        <th>ML ↓</th>
+                        <th>F1 ↑</th>
+                        <th>Prec. ↑</th>
+                        <th>Recall ↑</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Late Fusion</td>
+                        <td>0.6787</td>
+                        <td>0.5599</td>
+                        <td>0.6659</td>
+                        <td>0.5417</td>
+                        <td>0.0833</td>
+                        <td>0.8919</td>
+                        <td>0.9803</td>
+                        <td>0.8181</td>
+                    </tr>
+                    <tr>
+                        <td>Early Fusion</td>
+                        <td>0.8671</td>
+                        <td>0.6119</td>
+                        <td>0.7792</td>
+                        <td>0.6128</td>
+                        <td>0.2553</td>
+                        <td>0.9160</td>
+                        <td>0.9894</td>
+                        <td>0.8527</td>
+                    </tr>
+                    <tr>
+                        <td>AttuFuse</td>
+                        <td>0.7129</td>
+                        <td>0.5881</td>
+                        <td>0.7284</td>
+                        <td>0.6383</td>
+                        <td>0.0638</td>
+                        <td>0.9025</td>
+                        <td>0.9957</td>
+                        <td>0.8252</td>
+                    </tr>
+                    <tr>
+                        <td>F-Cooper</td>
+                        <td>0.6538</td>
+                        <td>0.5557</td>
+                        <td>0.6577</td>
+                        <td>0.7674</td>
+                        <td>0.1852</td>
+                        <td>0.9016</td>
+                        <td>0.9654</td>
+                        <td>0.8457</td>
+                    </tr>
+                    <tr>
+                        <td>V2XVIT</td>
+                        <td>0.7024</td>
+                        <td>0.5970</td>
+                        <td>0.7838</td>
+                        <td>0.6170</td>
+                        <td>0.0851</td>
+                        <td>0.9094</td>
+                        <td>0.9996</td>
+                        <td>0.8341</td>
+                    </tr>
+                    <tr>
+                        <td>CoBEVT</td>
+                        <td>0.6983</td>
+                        <td>0.5761</td>
+                        <td>0.6348</td>
+                        <td>0.5652</td>
+                        <td>0.0000</td>
+                        <td>0.9002</td>
+                        <td>0.9903</td>
+                        <td>0.8250</td>
+                    </tr>
+                    <tr>
+                        <td>Where2Comm</td>
+                        <td>0.7720</td>
+                        <td>0.4632</td>
+                        <td>0.6565</td>
+                        <td>0.6739</td>
+                        <td>0.0217</td>
+                        <td>0.9144</td>
+                        <td>0.9894</td>
+                        <td>0.8490</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <h5 class="is-3 has-text-centered">
+                
+            </h5>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content has-text-centered">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+
+</html>
